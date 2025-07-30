@@ -1,0 +1,43 @@
+<header class="header">
+  <h1 class="header__section-title">Аналитика / Финансовые операции</h1>
+
+  <div class="header__controls">
+    <button
+      class="header__button header__button--add-transaction btn hover-style"
+    >
+      Добавить транзакцию
+    </button>
+    <label class="header__date-label header__date-label--start">
+      С
+      <input
+        class="header__input header__input--start-date"
+        type="date"
+        value="2024-06-21"
+      />
+    </label>
+
+    <label class="header__date-label header__date-label--end">
+      ПО
+      <input
+        class="header__input header__input--end-date"
+        type="date"
+        value="2024-07-21"
+      />
+    </label>
+
+    <button class="header__button header__button--show btn hover-style">
+      Показать
+    </button>
+  </div>
+
+  <div class="header__export">
+    <button class="header__button header__button--export-pdf btn">
+      <img src="assets/icons/pdf-icon.svg" alt="PDF" class="header__icon" />
+      <span class="header__button-text">PDF</span>
+    </button>
+    <button class="header__button header__button--export-excel btn">
+      <img src="assets/icons/excel-icon.svg" alt="Excel" class="header__icon" />
+      <span class="header__button-text">Excel</span>
+    </button>
+  </div>
+</header>
