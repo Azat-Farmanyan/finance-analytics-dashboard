@@ -10,10 +10,10 @@ $font-family: 'Exo 2', sans-serif;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 5px;
   padding: 35px 35px 29px 47px;
+
 
 
   &__section-title {
@@ -31,6 +31,7 @@ $font-family: 'Exo 2', sans-serif;
     align-items: center;
     flex-wrap: nowrap;
     gap: 5px;
+    margin-left: auto;
   }
 
   &__button {
@@ -148,14 +149,11 @@ $font-family: 'Exo 2', sans-serif;
     align-items: center;
     justify-content: space-between;
     gap: 5px;
+    margin-left: 39px;
 
     font-weight: 500;
     font-size: 18px;
     letter-spacing: -0.04em;
     color: #a2acb7;
   }
-
-  &__icon {}
-
-  &__button-text {}
 }

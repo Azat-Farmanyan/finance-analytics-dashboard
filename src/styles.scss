@@ -10,14 +10,12 @@ body {
   line-height: 100%;
   letter-spacing: -0.04em;
   color: #505258;
+  background: #f3f3f3;
 }
 
-.hover-style {
+.click-style {
   transition: all 0.3s ease;
 
-  &:hover {
-    filter: brightness(1.1);
-  }
 
   &:active {
     filter: brightness(0.95);

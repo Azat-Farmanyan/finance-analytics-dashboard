@@ -1,3 +1,196 @@
 :host {
   display: block;
 }
+
+$font-family: "Exo 2", sans-serif;
+
+.table {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 33px 0 47px;
+
+  &__sort-icon {
+    cursor: pointer;
+  }
+
+  &__head {
+    padding-top: 14px;
+  }
+
+  &__body {
+    position: relative;
+
+    tr {
+      padding: 17px 0 16px 0;
+    }
+
+    .dashed {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0.7px;
+        background-image: repeating-linear-gradient(to right,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3) 5px,
+            transparent 5px,
+            transparent 10px);
+      }
+    }
+
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 33px;
+
+
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: #505258;
+
+    padding: 0 0 16px 0;
+
+    &--head {
+      padding-bottom: 14px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0.5px;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+    }
+  }
+
+  &__cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+
+    &--transaction-id,
+    &--link {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    &:nth-child(1) {
+      width: 117px;
+    }
+
+    &:nth-child(2) {
+      width: 65px;
+    }
+
+    &:nth-child(3) {
+      width: 126px;
+    }
+
+    &:nth-child(4) {
+      width: 126px;
+    }
+
+    &:nth-child(5) {
+      width: 166px;
+      margin-right: 113px;
+    }
+
+    &:nth-child(6) {
+      width: 68px;
+    }
+
+    &:nth-child(7) {
+      width: 61px;
+    }
+
+    &:nth-child(8) {
+      width: 60px;
+    }
+
+    &:nth-child(9) {
+      width: 71px;
+    }
+
+    &:nth-child(10) {
+      width: 52px;
+    }
+
+    &:nth-child(11) {
+      width: 126px;
+    }
+
+    &--head {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: -0.04em;
+      color: #a2acb7;
+
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+
+      &:nth-child(1) {
+        width: 117px;
+      }
+
+      &:nth-child(2) {
+        width: 65px;
+      }
+
+      &:nth-child(3) {
+        width: 126px;
+      }
+
+      &:nth-child(4) {
+        width: 126px;
+      }
+
+      &:nth-child(5) {
+        width: 166px;
+        margin-right: 113px;
+      }
+
+      &:nth-child(6) {
+        width: 68px;
+      }
+
+      &:nth-child(7) {
+        width: 61px;
+      }
+
+      &:nth-child(8) {
+        width: 60px;
+      }
+
+      &:nth-child(9) {
+        width: 71px;
+      }
+
+      &:nth-child(10) {
+        width: 52px;
+      }
+
+      &:nth-child(11) {
+        width: 126px;
+      }
+    }
+  }
+}
